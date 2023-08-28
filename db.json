@@ -1,0 +1,92 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "img": "/src/assets/Avatar(1).png",
+      "name": "Jenny",
+      "surname": "Wilson",
+      "email": "jessica.hanson@example.com",
+      "city": "Kulob",
+      "status": "INACTIVE",
+      "mobile_phone": 888880090,
+      "complete": false
+    },
+    {
+      "id": 3,
+      "img": "/src/assets/Avatar(2).png",
+      "name": "Guy",
+      "surname": "Hawkinsde",
+      "email": "bill.sanders@example.com",
+      "city": "Bokhtar",
+      "status": "INACTIVE",
+      "mobile_phone": "8888800902",
+      "complete": false
+    },
+    {
+      "id": 4,
+      "img": "/src/assets/Avatar(3).png",
+      "name": "Cody",
+      "surname": "Fisher",
+      "email": "michael.mitc@example.com",
+      "city": "Bokhtar",
+      "status": "ACTIVE",
+      "mobile_phone": 888880090,
+      "complete": false
+    },
+    {
+      "id": 5,
+      "img": "/src/assets/Avatar(4).png",
+      "name": "Esther",
+      "surname": "Howardee",
+      "email": "felicia.re@example.com",
+      "city": "Dushanbe",
+      "status": "INACTIVE",
+      "mobile_phone": "888880090",
+      "complete": false
+    },
+    {
+      "id": 6,
+      "img": "/src/assets/Avatar(5).png",
+      "name": "Kristin",
+      "surname": "Watson",
+      "email": "kenzi.lawson@example.com",
+      "city": "Khujand",
+      "status": "ACTIVE",
+      "mobile_phone": 888880090,
+      "complete": false
+    },
+    {
+      "id": 7,
+      "img": "/src/assets/Avatar(6).png",
+      "name": "Dianne",
+      "surname": "Russell",
+      "email": "deanna.curtis@example.com",
+      "city": "Dushanbe",
+      "status": "ACTIVE",
+      "mobile_phone": 888880090,
+      "complete": false
+    },
+    {
+      "id": 1693170318001,
+      "img": "data:image/jpeg;base64,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",
+      "name": "Olim",
+      "surname": "Yuldoshev",
+      "email": "oyuldoshev39@gmail.com",
+      "city": "Dushanbe",
+      "status": "INACTIVE",
+      "mobile_phone": "992919697875",
+      "complete": false
+    },
+    {
+      "id": 1693221316657,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgJGAKE5edtJkPxHsMg3Uo8pfdrySYBmkUhQ&usqp=CAU",
+      "name": "Olim",
+      "surname": "Yuldoshev",
+      "email": "oyuldoshev39@gmail.com",
+      "city": "Kulob",
+      "status": "INACTIVE",
+      "mobile_phone": "919697875",
+      "complete": false
+    }
+  ]
+}
