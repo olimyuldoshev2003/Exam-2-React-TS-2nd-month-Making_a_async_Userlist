@@ -28,7 +28,7 @@
       "name": "Cody",
       "surname": "Fisher",
       "email": "michael.mitc@example.com",
-      "city": "Bokhtar",
+      "city": "Dushanbe",
       "status": "ACTIVE",
       "mobile_phone": 888880090,
       "complete": false
@@ -50,7 +50,7 @@
       "name": "Kristin",
       "surname": "Watson",
       "email": "kenzi.lawson@example.com",
-      "city": "Khujand",
+      "city": "Dushanbe",
       "status": "ACTIVE",
       "mobile_phone": 888880090,
       "complete": false
@@ -85,6 +85,17 @@
       "email": "oyuldoshev39@gmail.com",
       "city": "Kulob",
       "status": "INACTIVE",
+      "mobile_phone": "919697875",
+      "complete": false
+    },
+    {
+      "id": 1693222148733,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKuU0-OYCvYw4bXbzl07kF4jIGTSJVZRyYA&usqp=CAU",
+      "name": "Olim",
+      "surname": "Yuldoshev",
+      "email": "oyuldoshev39@gmail.com",
+      "city": "Dushanbe",
+      "status": "ACTIVE",
       "mobile_phone": "919697875",
       "complete": false
     }
