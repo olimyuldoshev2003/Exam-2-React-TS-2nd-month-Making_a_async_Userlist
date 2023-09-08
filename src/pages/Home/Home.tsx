@@ -370,7 +370,7 @@ const Home = () => {
                     </td>
                     <td className=" text-[30px]  text-[#CFD6DC] hover:text-[green]">
                       <BsThreeDots
-                        onClick={() => dispatch(setModalSettings(item))}
+                        onMouseOver={() => dispatch(setModalSettings(item))}
                         className="cursor-pointer"
                       />
                     </td>
