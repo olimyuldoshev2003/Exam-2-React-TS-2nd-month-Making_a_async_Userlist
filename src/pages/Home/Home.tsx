@@ -370,7 +370,7 @@ const Home = () => {
                     </td>
                     <td className=" text-[30px]  text-[#CFD6DC] hover:text-[green]">
                       <BsThreeDots
-                        onMouseOver={() => dispatch(setModalSettings(item))}
+                        onClick={() => dispatch(setModalSettings(item))}
                         className="cursor-pointer"
                       />
                     </td>
@@ -417,7 +417,7 @@ const Home = () => {
                 }
                 placeholder="Enter your name"
                 required={true}
-                />
+              />
               <input
                 type="text"
                 className="outline-none border-[1px] border-[green] p-[8px_30px] rounded-[30px] text-[16px] dark:bg-[#000] dark:text-[#fff] dark:placeholder:text-[#fff]"
@@ -427,7 +427,7 @@ const Home = () => {
                 }
                 placeholder="Enter your surname"
                 required={true}
-                />
+              />
               <input
                 type="email"
                 className="outline-none border-[1px] border-[green] p-[8px_30px] rounded-[30px] text-[16px] dark:bg-[#000] dark:text-[#fff] dark:placeholder:text-[#fff]"
@@ -447,7 +447,7 @@ const Home = () => {
                   dispatch(setCityAdd(event.target.value))
                 }
                 required={true}
-                >
+              >
                 <option value="">---City---</option>
                 <option value="Dushanbe">Dushanbe</option>
                 <option value="Kulob">Kulob</option>
@@ -464,7 +464,7 @@ const Home = () => {
                   dispatch(setStatusAdd(event.target.value))
                 }
                 required={true}
-                >
+              >
                 <option value="">---Status---</option>
                 <option value="ACTIVE">ACTIVE</option>
                 <option value="INACTIVE">INACTIVE</option>
@@ -479,7 +479,7 @@ const Home = () => {
                 }
                 placeholder="Enter your number phone"
                 required={true}
-                />
+              />
               <button className="p-[5px_40px] bg-[#54b316] text-[#fff] text-[19px] font-[800] rounded-[30px]">
                 Add
               </button>
@@ -508,8 +508,8 @@ const Home = () => {
                 View profile
               </button>
               <button
-              className="flex items-center gap-[15px] text-[32px] hover:text-[gray] dark:text-[#fff]"
-              onClick={() => dispatch(openModalEdit())}
+                className="flex items-center gap-[15px] text-[32px] hover:text-[gray] dark:text-[#fff]"
+                onClick={() => dispatch(openModalEdit())}
               >
                 <AiFillEdit />
                 Edit
@@ -517,8 +517,7 @@ const Home = () => {
               <button
                 className="flex items-center gap-[15px] text-[32px] text-[red] hover:text-[#f35252]"
                 onClick={() => {
-                  dispatch(deleteData(idxDel));
-                  dispatch(closeModalSettings());
+                  dispatch(openModalDelete());
                 }}
               >
                 <MdDelete />
@@ -577,7 +576,7 @@ const Home = () => {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
           className="flex justify-center items-center"
-          >
+        >
           <Box className="w-[300px] py-[30px] bg-[#fff] flex items-center justify-center flex-col rounded-[10px] border-none outline-none dark:bg-[#000]">
             <h1 className="mb-[70px] text-center text-[29px] font-[800] dark:text-[#fff]">
               Edit User
@@ -588,7 +587,7 @@ const Home = () => {
               onSubmit={(event: React.ChangeEvent<HTMLFormElement>) =>
                 editUser(event)
               }
-              >
+            >
               <input
                 type="text"
                 className="outline-none border-[1px] border-[green] p-[8px_30px] rounded-[30px] text-[16px] dark:bg-[#000] dark:text-[#fff] dark:placeholder:text-[#fff]"
@@ -598,7 +597,7 @@ const Home = () => {
                 }
                 placeholder="Edit your link of your image"
                 required={true}
-                />
+              />
               <input
                 type="text"
                 className="outline-none border-[1px] border-[green] p-[8px_30px] rounded-[30px] text-[16px] dark:bg-[#000] dark:text-[#fff] dark:placeholder:text-[#fff]"
@@ -608,7 +607,7 @@ const Home = () => {
                 }
                 placeholder="Edit your name"
                 required={true}
-                />
+              />
               <input
                 type="text"
                 className="outline-none border-[1px] border-[green] p-[8px_30px] rounded-[30px] text-[16px] dark:bg-[#000] dark:text-[#fff] dark:placeholder:text-[#fff]"
@@ -618,7 +617,7 @@ const Home = () => {
                 }
                 placeholder="Edit your surname"
                 required={true}
-                />
+              />
               <input
                 type="email"
                 className="outline-none border-[1px] border-[green] p-[8px_30px] rounded-[30px] text-[16px] dark:bg-[#000] dark:text-[#fff] dark:placeholder:text-[#fff]"
@@ -638,7 +637,7 @@ const Home = () => {
                   dispatch(setCityEdit(event.target.value))
                 }
                 required={true}
-                >
+              >
                 <option value="">---City---</option>
                 <option value="Dushanbe">Dushanbe</option>
                 <option value="Kulob">Kulob</option>
@@ -655,7 +654,7 @@ const Home = () => {
                   dispatch(setStatusEdit(event.target.value))
                 }
                 required={true}
-                >
+              >
                 <option value="">---Status---</option>
                 <option value="ACTIVE">ACTIVE</option>
                 <option value="INACTIVE">INACTIVE</option>
@@ -670,7 +669,7 @@ const Home = () => {
                 }
                 placeholder="Edit your number phone"
                 required={true}
-                />
+              />
               <button className="p-[5px_40px] bg-[#54b316] text-[#fff] text-[19px] font-[800] rounded-[30px]">
                 Edit
               </button>
@@ -683,13 +682,13 @@ const Home = () => {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
           className="flex justify-end"
-          >
+        >
           <Box className="w-[410px] h-[100vh] py-[10px] bg-[#fff] flex items-center flex-col border-none outline-none dark:bg-[#000]">
             <div className="flex justify-between  gap-[130px]">
               <span
                 className="text-[32px] text-[#000] font-[700] cursor-pointer dark:text-[#fff]"
                 onClick={() => dispatch(closeModalViewBtn())}
-                >
+              >
                 &times;
               </span>
               <h1 className=" text-center text-[29px] font-[800] dark:text-[#fff]">
@@ -701,7 +700,7 @@ const Home = () => {
                 src={imgView}
                 alt=""
                 className="rounded-full w-[180px] h-[180px]"
-                />
+              />
               <h3 className="flex items-center gap-[10px] text-[#40464C] text-[24px] font-[600] dark:text-[#fff]">
                 {nameView}
                 <span>{surnameView}</span>{" "}
@@ -709,7 +708,7 @@ const Home = () => {
               <Link
                 to={``}
                 className="text-[#696C71] text-[16px] font-[500] dark:text-[#fff]"
-                >
+              >
                 {emailView}
               </Link>
             </div>
@@ -758,7 +757,7 @@ const Home = () => {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
           className="flex justify-center items-center"
-          >
+        >
           <Box className="w-[300px] py-[30px] bg-[#fff] flex items-center justify-center flex-col rounded-[10px] border-none outline-none dark:bg-[#000]">
             <h1 className="mb-[30px] text-center text-[23px] font-[800] dark:text-[#fff]">
               Are you sure to Delete this user?
@@ -770,7 +769,7 @@ const Home = () => {
                   dispatch(deleteData(idxDel));
                   dispatch(closeModalDel());
                 }}
-                >
+              >
                 Yes
               </button>
               <button
@@ -779,7 +778,7 @@ const Home = () => {
                   dispatch(handleCloseModalDel());
                   dispatch(closeModalDel());
                 }}
-                >
+              >
                 No
               </button>
             </div>
